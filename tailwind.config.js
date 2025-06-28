@@ -1,6 +1,10 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class", // Pastikan ini adalah 'class', bukan 'media'
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    // tambahkan path lainnya jika perlu
+  ],
   theme: {
     extend: {},
   },
