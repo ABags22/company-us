@@ -105,7 +105,7 @@ const CompanyProfile = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Get in Touch</h2>
             <input type="text" placeholder="Name" className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-black dark:text-white rounded px-4 py-2" required />
             <input type="email" placeholder="Email" className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-black dark:text-white rounded px-4 py-2" required />
-            <textarea placeholder="Message" className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-black dark:text-white rounded px-4 py-2 h-32" required />
+            <textarea placeholder="Message" className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-black dark:text-white rounded px-4 py-2 h-32 min-h-12" required />
             <button className="bg-green-600 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-700 transition">Send Message</button>
           </form>
         </div>
