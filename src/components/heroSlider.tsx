@@ -5,35 +5,40 @@ import { useRef, useEffect, useState } from "react";
 const slides = [
   {
     image: "/images/lone-tree.jpg",
-    headline: "Leading the Change",
-    title: "Innovating",
-    highlight: "Green Energy",
+    headline_first: "Leading the. ",
+    headline_sec: "Change",
+    title: "Empowering",
+    highlight: "Sustainable Solutions",
     button: "Learn More",
   },
   {
     image: "/images/image1.png",
-    headline: "Welcome to Our Mission",
+    headline_first: "Welcome to Our. ",
+    headline_sec: "Mission",
     title: "Empowering",
     highlight: "Sustainable Solutions",
     button: "Contact Us",
   },
   {
     image: "/images/image2.png",
-    headline: "Leading the Change",
-    title: "Innovating",
-    highlight: "Green Energy",
+    headline_first: "Leading the. ",
+    headline_sec: "Change",
+    title: "Empowering",
+    highlight: "Sustainable Solutions",
     button: "Learn More",
   },
   {
     image: "/images/lone-tree.jpg",
-    headline: "Leading the Change",
+    headline_first: "Leading the. ",
+    headline_sec: "Change",
     title: "Innovating",
     highlight: "Green Energy",
     button: "Learn More",
   },
   {
     image: "/images/image3.png",
-    headline: "Shaping Tomorrow",
+    headline_first: "Shaping. ",
+    headline_sec: "Tomorrow",
     title: "Building",
     highlight: "A Better Future",
     button: "Join Now",
@@ -83,9 +88,13 @@ export default function HeroSlider() {
               <img src={slide.image} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" loading="lazy" />
 
               {/* Overlay teks */}
-              <div className="absolute inset-0 bg-black/30 flex items-center justify-start px-3 md:px-12">
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-start pl-16 pr-3 md:pl-20 md:pr-12">
                 <div className="text-white max-w-xs md:max-w-md space-y-2 md:space-y-4">
-                  <p className="inline-block bg-white/20 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] md:text-sm font-medium text-orange-300 shadow">{slide.headline}</p>
+                  <p className="inline-block bg-white px-2 py-0.5 rounded text-[10px] md:text-sm font-medium text-black shadow">
+                    {slide.headline_first}
+                    <span className="text-orange-400">{slide.headline_sec}</span>
+                  </p>
+
                   <h2 className="text-lg md:text-4xl font-bold md:font-extrabold leading-snug md:leading-tight">
                     {slide.title} <span className="text-orange-400">{slide.highlight}</span>
                   </h2>

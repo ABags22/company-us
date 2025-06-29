@@ -26,21 +26,21 @@ const CompanyProfile = () => {
             <div className="mt-4 w-24 h-1 mx-auto bg-orange-500 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-stretch">
             {/* Gambar */}
-            <div className="w-full h-full">
-              <img src="/images/image3.png" alt="About YUWEB" className="rounded-xl shadow-lg w-full h-auto object-cover" />
+            <div className="flex flex-col h-full">
+              <img src="/images/image3.png" alt="About YUWEB" className="rounded-xl shadow-lg w-full h-auto object-cover flex-1" />
             </div>
 
             {/* Konten Tengah */}
-            <div className="space-y-6">
+            <div className="flex flex-col h-full space-y-6">
               <h3 className="text-2xl font-bold text-orange-600">Empowering Digital Solutions</h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 At YUWEB, we are passionate about building modern, fast, and user-friendly websites that help businesses thrive in the digital world. We bring your ideas to life with clean frontend code and intuitive design focused on
                 performance and usability.
               </p>
 
-              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg shadow p-5 space-y-2">
+              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg shadow p-5 space-y-2 mt-auto">
                 <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-200">Frequently Asked Questions</h4>
                 <ul className="text-sm text-gray-600 dark:text-gray-300 list-disc list-inside space-y-1">
                   <li>What types of websites do you create?</li>
@@ -51,7 +51,7 @@ const CompanyProfile = () => {
             </div>
 
             {/* Layanan */}
-            <div className="space-y-6">
+            <div className="flex flex-col h-full space-y-6">
               {[
                 {
                   icon: <Code2 className="w-6 h-6 text-orange-600" />,
