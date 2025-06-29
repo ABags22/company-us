@@ -25,16 +25,16 @@ const DarkModeToggle = ({ darkMode, setDarkMode }: DarkModeToggleProps) => (
 // Link navigasi umum (untuk versi desktop)
 const NavLinks = () => (
   <>
-    <a href="#home" className="hover:text-green-600 dark:text-gray-200 dark:hover:text-green-400">
+    <a href="#home" className="hover:text-orange-600 dark:text-gray-200 dark:hover:text-orange-400">
       Home
     </a>
-    <a href="#about" className="hover:text-green-600 dark:text-gray-200 dark:hover:text-green-400">
+    <a href="#about" className="hover:text-orange-600 dark:text-gray-200 dark:hover:text-orange-400">
       About
     </a>
-    <a href="#service" className="hover:text-green-600 dark:text-gray-200 dark:hover:text-green-400">
+    <a href="#service" className="hover:text-orange-600 dark:text-gray-200 dark:hover:text-orange-400">
       Service
     </a>
-    <a href="#contact" className="hover:text-green-600 dark:text-gray-200 dark:hover:text-green-400">
+    <a href="#contact" className="hover:text-orange-600 dark:text-gray-200 dark:hover:text-orange-400">
       Contact
     </a>
   </>
@@ -48,7 +48,7 @@ const DesktopMenu = ({ darkMode, setDarkMode }: DarkModeToggleProps) => (
     </div>
     <div className="flex items-center space-x-4">
       <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-      <button className="bg-green-600 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-700 transition">Book a Trip now</button>
+      <button className="px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-medium shadow-md transition">Register</button>
     </div>
   </nav>
 );
@@ -57,7 +57,7 @@ const DesktopMenu = ({ darkMode, setDarkMode }: DarkModeToggleProps) => (
 
 // SidebarMenu
 const SidebarMenu = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: React.Dispatch<React.SetStateAction<boolean>> }) => (
-  <div className={`fixed top-0 left-0 h-full w-64 bg-white dark:bg-gray-900 shadow-md transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 z-30`}>
+  <div className={`fixed top-0 left-0 h-full w-64 bg-white dark:bg-gray-900 shadow-md transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out z-30`}>
     {/* Tombol X tutup */}
     <div className="flex justify-end p-4">
       <button onClick={() => setIsOpen(false)} className="text-2xl text-gray-600 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-all duration-200" aria-label="Close menu">
@@ -91,7 +91,7 @@ const SidebarMenu = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: React.
 
       {/* Log out tetap di bawah */}
       <div className="pt-6 border-t border-gray-200 dark:border-gray-700">
-        <button className="flex items-center gap-2 text-sm text-white dark:text-white hover:text-red-500 transition">
+        <button className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white rounded-full font-medium shadow-md transition">
           <LogOut size={18} />
           Log out
         </button>
@@ -102,7 +102,7 @@ const SidebarMenu = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: React.
 
 // Komponen MenuItem agar lebih DRY
 const MenuItem = ({ icon, label }: { icon: React.ReactNode; label: string }) => (
-  <a href="#" className="flex items-center gap-3 hover:text-green-600 dark:hover:text-green-400 transition-colors">
+  <a href="#" className="flex items-center gap-3 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
     {icon}
     <span>{label}</span>
   </a>
