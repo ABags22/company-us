@@ -6,8 +6,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
           {/* Brand / Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-black dark:bg-white rounded-full" />
-            <span className="text-xl font-bold text-gray-800 dark:text-white">YUWEB</span>
+            <img src="/images/logo/blackL.png " alt="GoodWays Logo" className="w-6 h-6 object-contain" />
+            <span className="text-xl font-bold text-gray-800 dark:text-white">GoodWays</span>
           </div>
 
           {/* Navigasi */}
@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
 
         {/* Bawah: Garis + copyright */}
-        <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-6 text-center text-sm text-gray-500 dark:text-gray-400">© {new Date().getFullYear()} YUWEB. All rights reserved.</div>
+        <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-6 text-center text-sm text-gray-500 dark:text-gray-400">© {new Date().getFullYear()} GoodWays. All rights reserved.</div>
       </div>
     </footer>
   );

@@ -10,7 +10,7 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ image, tag, title, description, href }: ProjectCardProps) => {
-  const defaultImage = "/images/nop.svg";
+  const defaultImage = "/images/logo/blackL.png";
 
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     e.currentTarget.onerror = null;
@@ -37,10 +37,11 @@ const ProjectSection = () => {
     <section id="project" className="py-16 bg-gray-50 dark:bg-gray-900 scroll-mt-20 md:scroll-mt-[96px]">
       <div className="max-w-screen-xl mx-auto px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
         <div className="text-center mb-12">
-          <span className="text-sm font-semibold text-red-500 uppercase">| Projects</span>
-          <h2 className="mt-2 text-3xl md:text-4xl font-bold text-gray-900 dark:text-white leading-snug">
-            We Provide The Best <br /> Web Projects for You
+          <span className="text-sm font-semibold text-orange-500 uppercase tracking-wider">| Projects</span>
+          <h2 className="mt-2 text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white leading-tight">
+            Explore Our <span className="text-orange-500">Featured Projects</span>
           </h2>
+          <p className="mt-3 text-gray-600 dark:text-gray-300 text-base md:text-lg">Hasil terbaik dari tim kami untuk membantu Anda bersinar di dunia digital.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

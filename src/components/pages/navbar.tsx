@@ -28,7 +28,7 @@ const DesktopMenu = () => (
   </nav>
 );
 
-// Menu versi mobile (sidebar kiri)
+// Menu versi mobile
 interface MobileMenuProps {
   isOpen: boolean;
   toggle: () => void;
@@ -39,8 +39,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggle }) => (
     className={`
       md:hidden fixed top-16 left-0 right-0
       bg-white dark:bg-gray-900 shadow-md
-      transition-all duration-300
-      z-50
+      transition-all duration-300 z-50
       ${isOpen ? "max-h-[300px] py-4 px-6" : "max-h-0 overflow-hidden"}
     `}
   >
@@ -80,9 +79,11 @@ const Navbar = () => {
           </div>
 
           {/* Logo - center on mobile, left on desktop */}
-          <div className="flex-1 flex justify-center md:justify-start items-center space-x-2">
-            <div className="w-6 h-6 bg-black rounded-full" />
-            <span className="text-lg font-bold text-gray-800 dark:text-white">YUWEB</span>
+          <div className="flex-1 flex justify-center md:justify-start items-center space-x-2 cursor-pointer hover:brightness-110 transition">
+            <img src="/images/logo/blackL.png" alt="GoodWays Logo" className="w-6 h-6 object-contain" />
+            <a href="#profile" className="text-lg font-bold text-black dark:text-white hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-300">
+              <span>GoodWays</span>
+            </a>
           </div>
 
           {/* Placeholder kanan (mobile), Desktop menu */}

@@ -1,11 +1,22 @@
 const ContactHeaderSection = () => {
   return (
     <section className="bg-white dark:bg-gray-900 py-10">
-      <div className="relative h-60 md:h-72 bg-center bg-cover rounded-xl overflow-hidden" style={{ backgroundImage: "url('/images/alam.png')" }}>
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div
+        className="relative w-full aspect-[3/1] md:aspect-[4/1] lg:aspect-[5/1] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-lg transition-all duration-500"
+        style={{
+          backgroundImage: "url('/images/logo/blackL.png')",
+          backgroundColor: "#111", // fallback color
+        }}
+      >
+        {/* Overlay gradasi */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-black/70 via-black/50 to-transparent backdrop-blur-sm"></div>
+
+        {/* Konten */}
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
-          <span className="bg-white text-black text-xs font-semibold px-4 py-1 rounded shadow mb-2">HOME / CONTACT US</span>
-          <h1 className="text-3xl md:text-4xl font-extrabold uppercase">Contact Us</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase tracking-wide animate-slideUp">Get in Touch</h1>
+          <p className="mt-2 max-w-2xl text-sm md:text-base text-gray-300 animate-fadeInSlow">
+            Kami di <strong>GoodWays</strong> siap mendengarkan ide Anda dan menciptakan solusi digital yang berdampak.
+          </p>
         </div>
       </div>
     </section>
