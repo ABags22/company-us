@@ -7,8 +7,8 @@ const NavLinks = ({ onClick }: { onClick?: () => void }) => (
     <a href="#profile" onClick={onClick} className="hover:text-orange-600 dark:text-gray-200 dark:hover:text-orange-400">
       Profile
     </a>
-    <a href="#tecnology" onClick={onClick} className="hover:text-orange-600 dark:text-gray-200 dark:hover:text-orange-400">
-      Tecnology
+    <a href="#technology" onClick={onClick} className="hover:text-orange-600 dark:text-gray-200 dark:hover:text-orange-400">
+      Technology
     </a>
     <a href="#project" onClick={onClick} className="hover:text-orange-600 dark:text-gray-200 dark:hover:text-orange-400">
       Project

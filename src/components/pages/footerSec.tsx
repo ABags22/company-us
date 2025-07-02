@@ -15,7 +15,7 @@ const Footer = () => {
             <a href="#profile" className="hover:text-orange-500">
               Profile
             </a>
-            <a href="#about" className="hover:text-orange-500">
+            <a href="#technology" className="hover:text-orange-500">
               Technology
             </a>
             <a href="#project" className="hover:text-orange-500">

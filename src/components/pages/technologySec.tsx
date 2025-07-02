@@ -18,9 +18,9 @@ const TechnologyItem = ({ icon, name, desc }: TechnologyItemProps) => (
 );
 
 // Section Teknologi
-const TecnologySection = () => {
+const TechnologySection = () => {
   return (
-    <section id="tecnology" className="py-20 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 scroll-mt-20 md:scroll-mt-[96px]">
+    <section id="technology" className="py-20 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 scroll-mt-20 md:scroll-mt-[96px]">
       <div className="max-w-screen-xl mx-auto px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Teknologi yang Digunakan</h2>
@@ -49,4 +49,4 @@ const TecnologySection = () => {
   );
 };
 
-export default TecnologySection;
+export default TechnologySection;

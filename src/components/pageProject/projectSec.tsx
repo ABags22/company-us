@@ -19,7 +19,10 @@ const ProjectCard = ({ image, tag, title, description, href }: ProjectCardProps)
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-      <img src={image || defaultImage} alt={title} onError={handleImageError} className="w-full h-32 object-cover rounded-t-md" />
+      {/* Aspect ratio 16:9 image container */}
+      <div className="aspect-w-16 aspect-h-9">
+        <img src={image || defaultImage} alt={title} onError={handleImageError} className="w-full h-full object-cover" />
+      </div>
       <div className="p-4 space-y-2">
         <span className="inline-block bg-orange-100 text-orange-600 text-xs px-2 py-1 rounded-full">{tag}</span>
         <h3 className="text-lg font-semibold text-gray-800 dark:text-white">{title}</h3>

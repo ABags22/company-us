@@ -1,7 +1,7 @@
 // src/pages/Home.tsx
 import Profile from "./components/pages/profileSec";
 import Navbar from "./components/pages/navbar";
-import TecnologySection from "./components/pages/tecnologySec";
+import TecnologySection from "./components/pages/technologySec";
 import ProjectSection from "./components/pageProject/projectSec";
 import HeadContact from "./components/pages/contactHead";
 import Contact from "./components/pages/contactSec";
