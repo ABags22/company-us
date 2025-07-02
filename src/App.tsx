@@ -1,23 +1,25 @@
-import Hero from "./components/profileSec";
-import Navbar from "./components/navbar";
-import TecnologySection from "./components/tecnologySec";
-import ProjectSection from "./components/projectSec";
-import HeadContact from "./components/headconSec";
-import Contact from "./components/contactSec";
-import Footer from "./components/footerSec";
-
-function App() {
+// src/pages/Home.tsx
+import Profile from "./components/pages/profileSec";
+import Navbar from "./components/pages/navbar";
+import TecnologySection from "./components/pages/tecnologySec";
+import ProjectSection from "./components/pageProject/projectSec";
+import HeadContact from "./components/pages/contactHead";
+import Contact from "./components/pages/contactSec";
+import Footer from "./components/pages/footerSec";
+import ScrollTop from "./components/pages/scrollTop";
+const Home = () => {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Profile />
       <TecnologySection />
       <ProjectSection />
-      <HeadContact/>
+      <HeadContact />
       <Contact />
       <Footer />
+      <ScrollTop />
     </>
   );
-}
+};
 
-export default App;
+export default Home;

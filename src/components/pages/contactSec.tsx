@@ -1,20 +1,19 @@
 const ContactUsSection = () => {
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 xl:px-20">
+    <section id="contact" className="py-20 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 scroll-mt-20 md:scroll-mt-[96px]">
+      <div className="max-w-screen-xl mx-auto px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Kolom kiri: Judul + Info Kontak */}
           <div>
-            {/* Judul dan paragraf ikut grid */}
             <div className="mb-8">
               <span className="text-sm font-semibold text-red-500 uppercase">| Contact Us</span>
-              <h2 className="text-3xl md:text-4xl font-bold mt-2">Get In Touch With Our Team</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mt-2 leading-snug">Get In Touch With Our Team</h2>
               <p className="text-gray-600 dark:text-gray-400 mt-4">Jika kamu memiliki pertanyaan atau ingin bekerja sama, jangan ragu untuk menghubungi kami melalui form atau kontak di bawah ini.</p>
             </div>
 
             {/* Info Kontak */}
             <div className="space-y-4">
-              <div className="flex items-center space-x-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm">
+              <div className="flex items-center space-x-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm hover:scale-105 transition-transform duration-300">
                 <div className="bg-orange-100 text-orange-600 p-2 rounded-full text-lg">📞</div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Phone Number</p>
@@ -22,7 +21,7 @@ const ContactUsSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm">
+              <div className="flex items-center space-x-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm hover:scale-105 transition-transform duration-300">
                 <div className="bg-orange-100 text-orange-600 p-2 rounded-full text-lg">✉️</div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Email Address</p>
@@ -42,6 +41,7 @@ const ContactUsSection = () => {
                 className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
+
             <div>
               <label className="block text-sm font-medium mb-1">Email Address</label>
               <input
@@ -50,6 +50,7 @@ const ContactUsSection = () => {
                 className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
+
             <div>
               <label className="block text-sm font-medium mb-1">Subject</label>
               <input
@@ -58,6 +59,7 @@ const ContactUsSection = () => {
                 className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
+
             <div>
               <label className="block text-sm font-medium mb-1">Message</label>
               <textarea
@@ -66,7 +68,8 @@ const ContactUsSection = () => {
                 className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
-            <button type="submit" className="px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition">
+
+            <button type="submit" className="px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition duration-300">
               Send Message
             </button>
           </form>

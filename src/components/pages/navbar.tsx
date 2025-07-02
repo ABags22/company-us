@@ -35,7 +35,15 @@ interface MobileMenuProps {
 }
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggle }) => (
-  <div className={`md:hidden fixed top-16 left-0 right-0 bg-white dark:bg-gray-900 shadow-md transition-all duration-300 ${isOpen ? "max-h-[300px] py-4 px-6" : "max-h-0 overflow-hidden"}`}>
+  <div
+    className={`
+      md:hidden fixed top-16 left-0 right-0
+      bg-white dark:bg-gray-900 shadow-md
+      transition-all duration-300
+      z-50
+      ${isOpen ? "max-h-[300px] py-4 px-6" : "max-h-0 overflow-hidden"}
+    `}
+  >
     <div className="flex flex-col space-y-4 font-medium">
       <NavLinks onClick={toggle} />
     </div>
