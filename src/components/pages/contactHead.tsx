@@ -1,13 +1,9 @@
 const ContactHeaderSection = () => {
   return (
     <section className="bg-white dark:bg-gray-900 py-10">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="">
         <div
-          className="relative w-full aspect-[3/1] md:aspect-[4/1] lg:aspect-[5/1] bg-center bg-no-repeat bg-cover overflow-hidden shadow-lg transition-all duration-500"
-          style={{
-            backgroundImage: "url('/images/logo/blackL.png')",
-            backgroundColor: "#111", // fallback color
-          }}
+          className="bg-[url(/images/logo/blackL.png)] bg-gray-200 relative w-full aspect-[3/1] md:aspect-[4/1] lg:aspect-[5/1] bg-center bg-no-repeat bg-cover overflow-hidden shadow-lg transition-all duration-500"
         >
           {/* Overlay gradasi */}
           <div className="absolute inset-0 bg-gradient-to-tr from-black/70 via-black/50 to-transparent backdrop-blur-sm" />
